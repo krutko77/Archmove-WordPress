@@ -15,8 +15,11 @@
 			</div>
 		</footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220209194058"></script>
-	<script src="js/app.min.js?_v=20220209194058"></script>
+
+   <? wp_footer(); ?>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/app.min.js"></script> -->
 </body>
 
 </html>
