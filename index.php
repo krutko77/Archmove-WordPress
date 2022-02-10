@@ -10,7 +10,7 @@
 								safe, comfortable and transparent with a project management for the best result</p>
 							<a class="about__btn btn" href="#">Free Consultation</a>
 						</div>
-						<div class="about__img-wrap"><img class="about__img" src="img/about-img.jpg" alt="img"></div>
+						<div class="about__img-wrap"><img class="about__img" src="<?php echo IMG_DIR; ?>/about-img.jpg" alt="img"></div>
 					</div>
 				</div>
 			</section>
@@ -18,12 +18,12 @@
 				<div class="container">
 					<h2 class="gallery__title title">Build professional valuable room for you</h2>
 					<div class="gallery__wrap popup-gallery">
-						<a class="gallery__item" href="img/gallery-img1-big.jpg"><img class="gallery__item-img" src="img/gallery-img1.jpg" alt="photo"></a>
-						<a class="gallery__item" href="img/gallery-img2-big.jpg"><img class="gallery__item-img" src="img/gallery-img2.jpg" alt="photo"></a>
-						<a class="gallery__item" href="img/gallery-img3-big.jpg"><img class="gallery__item-img" src="img/gallery-img3.jpg" alt="photo"></a>
-						<a class="gallery__item" href="img/gallery-img4-big.jpg"><img class="gallery__item-img" src="img/gallery-img4.jpg" alt="photo"></a>
-						<a class="gallery__item" href="img/gallery-img5-big.jpg"><img class="gallery__item-img" src="img/gallery-img5.jpg" alt="photo"></a>
-						<a class="gallery__item" href="img/gallery-img6-big.jpg"><img class="gallery__item-img" src="img/gallery-img6.jpg" alt="photo"></a>
+						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img1-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img1.jpg" alt="photo"></a>
+						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img2-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img2.jpg" alt="photo"></a>
+						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img3-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img3.jpg" alt="photo"></a>
+						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img4-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img4.jpg" alt="photo"></a>
+						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img5-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img5.jpg" alt="photo"></a>
+						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img6-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img6.jpg" alt="photo"></a>
 					</div>
 				</div>
 			</section>
@@ -32,7 +32,7 @@
 					<h2 class="features__title title">Build your needs with Archmove</h2>
 					<div class="features__content">
 						<div class="features__img-wrap">
-							<img class="features__img" src="img/features_img.jpg" alt="photo">
+							<img class="features__img" src="<?php echo IMG_DIR; ?>/features_img.jpg" alt="photo">
 						</div>
 						<div class="features__text-block">
 							<div class="features__text-box features__text-box--first">
@@ -87,7 +87,7 @@
 					</div>
 					<div class="reviews__bottom">
 						<div class="reviews__img-wrap">
-							<img class="reviews__img" src="img/reviews-img.png" alt="dream-house">
+							<img class="reviews__img" src="<?php echo IMG_DIR; ?>/reviews-img.png" alt="dream-house">
 						</div>
 						<div class="reviews__slogan-block">
 							<div class="reviews__slogan">Realize your dream project with <spa class="reviews__slogan--color">Archmove</spa>
@@ -101,15 +101,15 @@
 				<div class="container">
 					<h2 class="partners__title title">Our Partners</h2>
 					<div class="partners__wrap">
-						<div class="partners__item partners__item-1"><img class="partners__img" src="img/logo-1.svg" alt="logo">
+						<div class="partners__item partners__item-1"><img class="partners__img" src="<?php echo IMG_DIR; ?>/logo-1.svg" alt="logo">
 						</div>
-						<div class="partners__item partners__item-2"><img class="partners__img" src="img/logo-2.svg" alt="logo">
+						<div class="partners__item partners__item-2"><img class="partners__img" src="<?php echo IMG_DIR; ?>/logo-2.svg" alt="logo">
 						</div>
-						<div class="partners__item partners__item-3"><img class="partners__img" src="img/logo-3.svg" alt="logo">
+						<div class="partners__item partners__item-3"><img class="partners__img" src="<?php echo IMG_DIR; ?>/logo-3.svg" alt="logo">
 						</div>
-						<div class="partners__item partners__item-4"><img class="partners__img" src="img/logo-4.svg" alt="logo">
+						<div class="partners__item partners__item-4"><img class="partners__img" src="<?php echo IMG_DIR; ?>/logo-4.svg" alt="logo">
 						</div>
-						<div class="partners__item partners__item-5"><img class="partners__img" src="img/logo-5.svg" alt="logo">
+						<div class="partners__item partners__item-5"><img class="partners__img" src="<?php echo IMG_DIR; ?>/logo-5.svg" alt="logo">
 						</div>
 					</div>
 				</div>

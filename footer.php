@@ -10,16 +10,14 @@
 							<li class="nav__item"><a class="nav__link" href="">Privacy Policy</a></li>
 						</ul>
 					</nav>
-					<a class="footer__logo-link" href="#"><img class="footer__logo" src="img/logo-arch.svg" alt="logo"></a>
+					<a class="footer__logo-link" href="#"><img class="footer__logo" src="<?php echo IMG_DIR; ?>/logo-arch.svg" alt="logo"></a>
 				</div>
 			</div>
 		</footer>
 	</div>
 
    <? wp_footer(); ?>
-
-	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="js/app.min.js"></script> -->
+	
 </body>
 
 </html>

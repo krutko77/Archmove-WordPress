@@ -15,7 +15,7 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__wrapper">
-					<a class="header__logo-link" href="#"><img class="header__logo" src="img/logo-arch.svg" alt="logo"></a>
+					<a class="header__logo-link" href="#"><img class="header__logo" src="<?php echo IMG_DIR; ?>/logo-arch.svg" alt="logo"></a>
 					<button class="header__icon-menu"><span></span></button>
 					<div class="header__menu">
 						<nav class="header__nav nav">
@@ -27,7 +27,7 @@
 							</ul>
 						</nav>
 						<div class="header__right-block">
-							<img class="header__img" src="img/search-icon.svg" alt="search-icon">
+							<img class="header__img" src="<?php echo IMG_DIR; ?>/search-icon.svg" alt="search-icon">
 							<button class="header__button--sign-in">Sign In</button>
 							<button class="header__button--sign-up">Sign Up</button>
 						</div>
