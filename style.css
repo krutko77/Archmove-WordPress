@@ -116,6 +116,28 @@ body {
    touch-action: none;
 }
 
+.wrapper {
+   margin: 0 auto;
+   background-color: #FFFFFF;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+.wrapper>main {
+   flex: 1 1 auto;
+}
+
+.wrapper>* {
+   min-width: 0;
+}
+
+.btn:active,
+button:active {
+   transform: translate(1px, 2px);
+}
+
 .container {
    max-width: 1200px;
    padding: 0 50px;
@@ -138,28 +160,6 @@ body {
    .container {
       padding: 0 25px;
    }
-}
-
-.wrapper {
-   margin: 0 auto;
-   background-color: #FFFFFF;
-   min-height: 100%;
-   display: flex;
-   flex-direction: column;
-   overflow: hidden;
-}
-
-.wrapper>main {
-   flex: 1 1 auto;
-}
-
-.wrapper>* {
-   min-width: 0;
-}
-
-.btn:active,
-button:active {
-   transform: translate(1px, 2px);
 }
 
 .btn {
@@ -948,6 +948,10 @@ button:active {
    position: relative;
 }
 
+.reviews__slider .slider__item {
+   padding: 0px 2px;
+}
+
 .reviews__slider .slider__item-text {
    font-size: 32px;
    font-family: "SFUIDisplayLight";
@@ -1006,7 +1010,34 @@ button:active {
 
 .reviews__slider .slick-arrow.slick-prev {
    right: 46px;
-   background: url("./assets/img/slider-arrow-prew.svg") no-repeat;
+}
+
+.reviews__slider .slick-arrow.slick-prev::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 48px;
+   height: 48px;
+   background-color: #F2F2F2;
+   z-index: 3;
+   opacity: 0;
+   transition: opacity 0.2s ease 0.1s;
+}
+
+.reviews__slider .slick-arrow.slick-prev:hover::after {
+   opacity: 1;
+}
+
+.reviews__slider .slick-arrow.slick-prev::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 48px;
+   height: 48px;
+   background: url("./assets/img/slider-arrow-prev.svg") 0 0 no-repeat;
+   z-index: 4;
 }
 
 @media (max-width: 991px) {
@@ -1017,7 +1048,34 @@ button:active {
 
 .reviews__slider .slick-arrow.slick-next {
    right: -10px;
-   background: url("./assets/img/slider-arrow-next.svg") no-repeat;
+}
+
+.reviews__slider .slick-arrow.slick-next::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 48px;
+   height: 48px;
+   background-color: #F2F2F2;
+   z-index: 3;
+   opacity: 0;
+   transition: opacity 0.2s ease 0.1s;
+}
+
+.reviews__slider .slick-arrow.slick-next:hover::after {
+   opacity: 1;
+}
+
+.reviews__slider .slick-arrow.slick-next::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 48px;
+   height: 48px;
+   background: url("./assets/img/slider-arrow-next.svg") 0 0 no-repeat;
+   z-index: 4;
 }
 
 @media (max-width: 991px) {
@@ -1669,8 +1727,8 @@ img.mfp-img {
 screen and (max-height: 300px) {
 
    /**
-       * Remove all paddings around the image on small screen
-       */
+        * Remove all paddings around the image on small screen
+        */
    .mfp-img-mobile .mfp-image-holder {
       padding-left: 0;
       padding-right: 0;
