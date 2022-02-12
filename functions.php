@@ -7,6 +7,8 @@ define('IMG_DIR', THEME_ROOT . '/assets/img');
 
 add_action( 'wp_enqueue_scripts', 'archmove_style' );
 add_action( 'wp_enqueue_scripts', 'archmove_scripts' );
+add_action( 'after_setup_theme', 'archmove_register_nav_menu' );
+
 
 function archmove_style() {
 	wp_enqueue_style( 'main-style', get_stylesheet_uri() );
@@ -21,3 +23,6 @@ function archmove_scripts() {
    wp_enqueue_script( 'main-script', JS_DIR . './main.min.js', array( 'jquery' ), null, true );
 }    
 
+function archmove_register_nav_menu() {
+	register_nav_menu( 'top_menu', 'Меню в шапке' );
+}

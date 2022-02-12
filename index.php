@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<main class="page">
-			<section class="about">
+			<section class="about" id="about">
 				<div class="container">
 					<h1 class="about__title">Build Your Dream <span>House</span></h1>
 					<div class="about__content">
@@ -14,7 +14,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="gallery">
+			<section class="gallery" id="gallery">
 				<div class="container">
 					<h2 class="gallery__title title">Build professional valuable room for you</h2>
 					<div class="gallery__wrap popup-gallery">
@@ -27,7 +27,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="features">
+			<section class="features" id="features">
 				<div class="container">
 					<h2 class="features__title title">Build your needs with Archmove</h2>
 					<div class="features__content">
@@ -58,7 +58,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews">
+			<section class="reviews" id="reviews">
 				<div class="container">
 					<h2 class="reviews__title title">Sound Too Good To Be True?</h2>
 					<div class="reviews__top">
@@ -97,7 +97,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="partners">
+			<section class="partners" id="partners">
 				<div class="container">
 					<h2 class="partners__title title">Our Partners</h2>
 					<div class="partners__wrap">
