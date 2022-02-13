@@ -24,5 +24,6 @@ function archmove_scripts() {
 }    
 
 function archmove_register_nav_menu() {
-	register_nav_menu( 'top_menu', 'Меню в шапке' );
+	register_nav_menu( 'top_menu', 'top_menu' );
+   register_nav_menu( 'bottom_menu', 'bottom_menu' );
 }

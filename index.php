@@ -2,15 +2,13 @@
 	<main class="page">
 			<section class="about" id="about">
 				<div class="container">
-					<h1 class="about__title">Build Your Dream <span>House</span></h1>
+					<h1 class="about__title"><?php the_field('about__title'); ?> <span><?php the_field('span'); ?></span></h1>
 					<div class="about__content">
 						<div class="about__description">
-							<p class="about__text">The first and most trusted marketplace of design & build house in The World.
-								100% guaranteed Build
-								safe, comfortable and transparent with a project management for the best result</p>
+							<p class="about__text"><?php the_field('about__text'); ?></p>
 							<a class="about__btn btn" href="#">Free Consultation</a>
 						</div>
-						<div class="about__img-wrap"><img class="about__img" src="<?php echo IMG_DIR; ?>/about-img.jpg" alt="img"></div>
+						<div class="about__img-wrap"><img class="about__img" src="<?php the_field('about__img'); ?>" alt="img"></div>
 					</div>
 				</div>
 			</section>
@@ -18,12 +16,12 @@
 				<div class="container">
 					<h2 class="gallery__title title">Build professional valuable room for you</h2>
 					<div class="gallery__wrap popup-gallery">
-						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img1-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img1.jpg" alt="photo"></a>
-						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img2-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img2.jpg" alt="photo"></a>
-						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img3-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img3.jpg" alt="photo"></a>
-						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img4-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img4.jpg" alt="photo"></a>
-						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img5-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img5.jpg" alt="photo"></a>
-						<a class="gallery__item" href="<?php echo IMG_DIR; ?>/gallery-img6-big.png"><img class="gallery__item-img" src="<?php echo IMG_DIR; ?>/gallery-img6.jpg" alt="photo"></a>
+						<a class="gallery__item big-img1" href="<?php echo IMG_DIR; ?>/gallery-img1-big.png"><img class="gallery__item-img img1" src="<?php echo IMG_DIR; ?>/gallery-img1.jpg" alt="photo"></a>
+						<a class="gallery__item big-img2" href="<?php echo IMG_DIR; ?>/gallery-img2-big.png"><img class="gallery__item-img img2" src="<?php echo IMG_DIR; ?>/gallery-img2.jpg" alt="photo"></a>
+						<a class="gallery__item big-img3" href="<?php echo IMG_DIR; ?>/gallery-img3-big.png"><img class="gallery__item-img img3" src="<?php echo IMG_DIR; ?>/gallery-img3.jpg" alt="photo"></a>
+						<a class="gallery__item big-img4" href="<?php echo IMG_DIR; ?>/gallery-img4-big.png"><img class="gallery__item-img img4" src="<?php echo IMG_DIR; ?>/gallery-img4.jpg" alt="photo"></a>
+						<a class="gallery__item big-img5" href="<?php echo IMG_DIR; ?>/gallery-img5-big.png"><img class="gallery__item-img img5" src="<?php echo IMG_DIR; ?>/gallery-img5.jpg" alt="photo"></a>
+						<a class="gallery__item big-img6" href="<?php echo IMG_DIR; ?>/gallery-img6-big.png"><img class="gallery__item-img img6" src="<?php echo IMG_DIR; ?>/gallery-img6.jpg" alt="photo"></a>
 					</div>
 				</div>
 			</section>
