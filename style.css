@@ -615,6 +615,7 @@ button:active {
 .gallery__wrap {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
+   /* grid-template-rows: minmax(200px, 432px); */
    gap: 45px;
 }
 
@@ -639,6 +640,7 @@ button:active {
 
 .gallery__item {
    position: relative;
+   max-height: 432px;
    line-height: 0;
    transition-duration: 0.5s;
 }

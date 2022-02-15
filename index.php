@@ -16,7 +16,7 @@
 				<div class="container">
 					<h2 class="gallery__title title">Build professional valuable room for you</h2>
 					<div class="gallery__wrap popup-gallery">
-						<a class="gallery__item big-img1" href="<?php echo IMG_DIR; ?>/gallery-img1-big.png"><img class="gallery__item-img img1" src="<?php echo IMG_DIR; ?>/gallery-img1.jpg" alt="photo"></a>
+						<a class="gallery__item big-img1" href="<?php the_field('big-img1'); ?>"><img class="gallery__item-img img1" src="<?php the_field('img1'); ?>" alt="photo"></a>
 						<a class="gallery__item big-img2" href="<?php echo IMG_DIR; ?>/gallery-img2-big.png"><img class="gallery__item-img img2" src="<?php echo IMG_DIR; ?>/gallery-img2.jpg" alt="photo"></a>
 						<a class="gallery__item big-img3" href="<?php echo IMG_DIR; ?>/gallery-img3-big.png"><img class="gallery__item-img img3" src="<?php echo IMG_DIR; ?>/gallery-img3.jpg" alt="photo"></a>
 						<a class="gallery__item big-img4" href="<?php echo IMG_DIR; ?>/gallery-img4-big.png"><img class="gallery__item-img img4" src="<?php echo IMG_DIR; ?>/gallery-img4.jpg" alt="photo"></a>
