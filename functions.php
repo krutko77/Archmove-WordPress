@@ -4,7 +4,7 @@ define('THEME_ROOT', get_template_directory_uri());
 define('JS_DIR', THEME_ROOT . '/assets/js');
 define('IMG_DIR', THEME_ROOT . '/assets/img');
 
-
+add_filter('show_admin_bar', '__return_false');
 add_action( 'wp_enqueue_scripts', 'archmove_style' );
 add_action( 'wp_enqueue_scripts', 'archmove_scripts' );
 add_action( 'after_setup_theme', 'archmove_register_nav_menu' );
@@ -20,7 +20,7 @@ function archmove_scripts() {
 	wp_register_script( 'jquery', '//code.jquery.com/jquery-3.6.0.min.js' );
 	wp_enqueue_script( 'jquery' );
 
-   wp_enqueue_script( 'main-script', JS_DIR . './main.min.js', array( 'jquery' ), null, true );
+   wp_enqueue_script( 'main-script', JS_DIR . './main.js', array( 'jquery' ), null, true );
 }    
 
 function archmove_register_nav_menu() {

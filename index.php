@@ -14,42 +14,36 @@
 			</section>
 			<section class="gallery" id="gallery">
 				<div class="container">
-					<h2 class="gallery__title title">Build professional valuable room for you</h2>
+					<h2 class="gallery__title title"><?php the_field('gallery__title'); ?></h2>
 					<div class="gallery__wrap popup-gallery">
 						<a class="gallery__item big-img1" href="<?php the_field('big-img1'); ?>"><img class="gallery__item-img img1" src="<?php the_field('img1'); ?>" alt="photo"></a>
-						<a class="gallery__item big-img2" href="<?php echo IMG_DIR; ?>/gallery-img2-big.png"><img class="gallery__item-img img2" src="<?php echo IMG_DIR; ?>/gallery-img2.jpg" alt="photo"></a>
-						<a class="gallery__item big-img3" href="<?php echo IMG_DIR; ?>/gallery-img3-big.png"><img class="gallery__item-img img3" src="<?php echo IMG_DIR; ?>/gallery-img3.jpg" alt="photo"></a>
-						<a class="gallery__item big-img4" href="<?php echo IMG_DIR; ?>/gallery-img4-big.png"><img class="gallery__item-img img4" src="<?php echo IMG_DIR; ?>/gallery-img4.jpg" alt="photo"></a>
-						<a class="gallery__item big-img5" href="<?php echo IMG_DIR; ?>/gallery-img5-big.png"><img class="gallery__item-img img5" src="<?php echo IMG_DIR; ?>/gallery-img5.jpg" alt="photo"></a>
-						<a class="gallery__item big-img6" href="<?php echo IMG_DIR; ?>/gallery-img6-big.png"><img class="gallery__item-img img6" src="<?php echo IMG_DIR; ?>/gallery-img6.jpg" alt="photo"></a>
+						<a class="gallery__item big-img2" href="<?php the_field('big-img2'); ?>"><img class="gallery__item-img img2" src="<?php the_field('img2'); ?>" alt="photo"></a>
+						<a class="gallery__item big-img3" href="<?php the_field('big-img3'); ?>"><img class="gallery__item-img img3" src="<?php the_field('img3'); ?>" alt="photo"></a>
+						<a class="gallery__item big-img4" href="<?php the_field('big-img4'); ?>"><img class="gallery__item-img img4" src="<?php the_field('img4'); ?>" alt="photo"></a>
+						<a class="gallery__item big-img5" href="<?php the_field('big-img5'); ?>"><img class="gallery__item-img img5" src="<?php the_field('img5'); ?>" alt="photo"></a>
+						<a class="gallery__item big-img6" href="<?php the_field('big-img6'); ?>"><img class="gallery__item-img img6" src="<?php the_field('img6'); ?>" alt="photo"></a>
 					</div>
 				</div>
 			</section>
 			<section class="features" id="features">
 				<div class="container">
-					<h2 class="features__title title">Build your needs with Archmove</h2>
+					<h2 class="features__title title"><?php the_field('features__title'); ?></h2>
 					<div class="features__content">
 						<div class="features__img-wrap">
-							<img class="features__img" src="<?php echo IMG_DIR; ?>/features_img.jpg" alt="photo">
+							<img class="features__img" src="<?php the_field('features__img'); ?>" alt="photo">
 						</div>
 						<div class="features__text-block">
 							<div class="features__text-box features__text-box--first">
-								<h3 class="features__subtitle">100% guaranteed project completion</h3>
-								<p class="features__text">Build safe, comfortable and transparent with a project management
-									application
-									with a joint account.</p>
+								<h3 class="features__subtitle"><?php the_field('subtitle-1'); ?></h3>
+								<p class="features__text"><?php the_field('text-1'); ?></p>
 							</div>
 							<div class="features__text-box features__text-box--second">
-								<h3 class="features__subtitle">No additional fees</h3>
-								<p class="features__text">There are no hidden costs. The value of the offer you get is the value
-									you
-									paid.
-								</p>
+								<h3 class="features__subtitle"><?php the_field('subtitle-2'); ?></h3>
+								<p class="features__text"><?php the_field('text-2'); ?></p>
 							</div>
 							<div class="features__text-box features__text-box--last">
-								<h3 class="features__subtitle">Get escort from the Team</h3>
-								<p class="features__text">Monitor reports from the Arsitag team who check directly in the field.
-								</p>
+								<h3 class="features__subtitle"><?php the_field('subtitle-3'); ?></h3>
+								<p class="features__text"><?php the_field('text-3'); ?></p>
 							</div>
 							<a class="features__btn btn" href="#">Consultation</a>
 						</div>
