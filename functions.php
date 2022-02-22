@@ -46,7 +46,7 @@ function register_post_types(){
 		'public'              => false,
 		'show_ui'             => true, // зависит от public
 		'menu_icon'           => 'dashicons-star-filled',
-		'supports'            => [ 'title', 'editor', 'excerpt' ], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields', comments',
+		'supports'            => [ 'title', 'editor', 'custom-fields' ], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields', comments',
 	] );
 }
 
@@ -60,8 +60,10 @@ function register_post_types(){
       $articles = [];
 
       foreach(get_posts($args) as $post) {
+
+         $article = get_fields( $post->ID );
+
          $article['text'] = $post->post_content;
-         $article['address'] = $post->post_excerpt;
          $articles[] = $article;
       }
 

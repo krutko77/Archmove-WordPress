@@ -59,21 +59,9 @@
                         <?php foreach(getArticles() as $article):  ?>
 								<article class="slider__item">
 									<p class="slider__item-text"><?php echo $article['text'] ?></p>
-									<address class="slider__item-author"><?php echo $article['address'] ?></address>
+                           <address class="slider__item-author"><strong><?php echo $article['slider__item-author-name'] ?></strong><?php echo $article['slider__item-author-position'] ?></address>									
 								</article>
-                        <?php endforeach; ?>
-								<!-- <article class="slider__item">
-									<p class="slider__item-text">We just wanted to thank you for this fantastic website! We are so
-										grateful for being able to advertise our Petite cabin and receive feedback from people from
-										all over the U.S. and even further.</p>
-									<address class="slider__item-author"><strong>Adam Morph</strong> — CEO A lfatech</address>
-								</article>
-								<article class="slider__item">
-									<p class="slider__item-text">We just wanted to thank you for this fantastic website! We are so
-										grateful for being able to advertise our Petite cabin and receive feedback from people from
-										all over the U.S. and even further.</p>
-									<address class="slider__item-author"><strong>Adam Morph</strong> — CEO A lfatech</address>
-								</article> -->
+                        <?php endforeach; ?>						
 							</div>
 						</div>
 					</div>
