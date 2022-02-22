@@ -29,23 +29,44 @@ function archmove_register_nav_menu() {
 }
 
 function register_post_types(){
-	register_post_type( 'reviews', [
+	register_post_type( 'articles', [
 		'labels' => [
-			'name'               => 'reviews', // основное название для типа записи
-			'singular_name'      => 'review', // название для одной записи этого типа
-			'add_new'            => 'Добавить review', // для добавления новой записи
-			'add_new_item'       => 'Добавление review', // заголовка у вновь создаваемой записи в админ-панели.
-			'edit_item'          => 'Редактирование review', // для редактирования типа записи
-			'new_item'           => 'Новое review', // текст новой записи
-			'view_item'          => 'Смотреть review', // для просмотра записи этого типа.
-			'search_items'       => 'Искать review', // для поиска по этим типам записи
+			'name'               => 'articles', // основное название для типа записи
+			'singular_name'      => 'article', // название для одной записи этого типа
+			'add_new'            => 'Добавить article', // для добавления новой записи
+			'add_new_item'       => 'Добавление article', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Редактирование article', // для редактирования типа записи
+			'new_item'           => 'Новое article', // текст новой записи
+			'view_item'          => 'Смотреть article', // для просмотра записи этого типа.
+			'search_items'       => 'Искать article', // для поиска по этим типам записи
 			'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
 			'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
-			'menu_name'          => 'Reviews', // название меню
+			'menu_name'          => 'Articles', // название меню
 		],
 		'public'              => false,
 		'show_ui'             => true, // зависит от public
 		'menu_icon'           => 'dashicons-star-filled',
-		'supports'            => [ 'editor', 'author' ], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments',
+		'supports'            => [ 'title', 'editor', 'excerpt' ], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields', comments',
 	] );
 }
+
+   function getArticles() {
+      $args = array(
+         'orderby'     => 'date',
+         'order'       => 'ASC',
+         'post_type'   => 'articles',         
+      ) ;
+
+      $articles = [];
+
+      foreach(get_posts($args) as $post) {
+         $article['text'] = $post->post_content;
+         $article['address'] = $post->post_excerpt;
+         $articles[] = $article;
+      }
+
+      return $articles;
+   }
+
+
+   // var_dump(getArticles());

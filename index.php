@@ -16,12 +16,12 @@
 				<div class="container">
 					<h2 class="gallery__title title"><?php the_field('gallery__title'); ?></h2>
 					<div class="gallery__wrap popup-gallery">
-						<a class="gallery__item big-img1" href="<?php the_field('big-img1'); ?>"><img class="gallery__item-img img1" src="<?php the_field('img1'); ?>" alt="photo"></a>
-						<a class="gallery__item big-img2" href="<?php the_field('big-img2'); ?>"><img class="gallery__item-img img2" src="<?php the_field('img2'); ?>" alt="photo"></a>
-						<a class="gallery__item big-img3" href="<?php the_field('big-img3'); ?>"><img class="gallery__item-img img3" src="<?php the_field('img3'); ?>" alt="photo"></a>
-						<a class="gallery__item big-img4" href="<?php the_field('big-img4'); ?>"><img class="gallery__item-img img4" src="<?php the_field('img4'); ?>" alt="photo"></a>
-						<a class="gallery__item big-img5" href="<?php the_field('big-img5'); ?>"><img class="gallery__item-img img5" src="<?php the_field('img5'); ?>" alt="photo"></a>
-						<a class="gallery__item big-img6" href="<?php the_field('big-img6'); ?>"><img class="gallery__item-img img6" src="<?php the_field('img6'); ?>" alt="photo"></a>
+						<a class="gallery__item" href="<?php the_field('big-img1'); ?>"><img class="gallery__item-img" src="<?php the_field('img1'); ?>" alt="photo"></a>
+						<a class="gallery__item" href="<?php the_field('big-img2'); ?>"><img class="gallery__item-img" src="<?php the_field('img2'); ?>" alt="photo"></a>
+						<a class="gallery__item" href="<?php the_field('big-img3'); ?>"><img class="gallery__item-img" src="<?php the_field('img3'); ?>" alt="photo"></a>
+						<a class="gallery__item" href="<?php the_field('big-img4'); ?>"><img class="gallery__item-img" src="<?php the_field('img4'); ?>" alt="photo"></a>
+						<a class="gallery__item" href="<?php the_field('big-img5'); ?>"><img class="gallery__item-img" src="<?php the_field('img5'); ?>" alt="photo"></a>
+						<a class="gallery__item" href="<?php the_field('big-img6'); ?>"><img class="gallery__item-img" src="<?php the_field('img6'); ?>" alt="photo"></a>
 					</div>
 				</div>
 			</section>
@@ -52,11 +52,17 @@
 			</section>
 			<section class="reviews" id="reviews">
 				<div class="container">
-					<h2 class="reviews__title title">Sound Too Good To Be True?</h2>
+					<h2 class="reviews__title title"><?php the_field('reviews__title'); ?></h2>
 					<div class="reviews__top">
 						<div class="reviews__top-inner">
 							<div class="reviews__slider slider">
+                        <?php foreach(getArticles() as $article):  ?>
 								<article class="slider__item">
+									<p class="slider__item-text"><?php echo $article['text'] ?></p>
+									<address class="slider__item-author"><?php echo $article['address'] ?></address>
+								</article>
+                        <?php endforeach; ?>
+								<!-- <article class="slider__item">
 									<p class="slider__item-text">We just wanted to thank you for this fantastic website! We are so
 										grateful for being able to advertise our Petite cabin and receive feedback from people from
 										all over the U.S. and even further.</p>
@@ -67,22 +73,16 @@
 										grateful for being able to advertise our Petite cabin and receive feedback from people from
 										all over the U.S. and even further.</p>
 									<address class="slider__item-author"><strong>Adam Morph</strong> — CEO A lfatech</address>
-								</article>
-								<article class="slider__item">
-									<p class="slider__item-text">We just wanted to thank you for this fantastic website! We are so
-										grateful for being able to advertise our Petite cabin and receive feedback from people from
-										all over the U.S. and even further.</p>
-									<address class="slider__item-author"><strong>Adam Morph</strong> — CEO A lfatech</address>
-								</article>
+								</article> -->
 							</div>
 						</div>
 					</div>
 					<div class="reviews__bottom">
 						<div class="reviews__img-wrap">
-							<img class="reviews__img" src="<?php echo IMG_DIR; ?>/reviews-img.png" alt="dream-house">
+							<img class="reviews__img" src="<?php the_field('reviews__img'); ?>" alt="dream-house">
 						</div>
 						<div class="reviews__slogan-block">
-							<div class="reviews__slogan">Realize your dream project with <spa class="reviews__slogan--color">Archmove</spa>
+							<div class="reviews__slogan"><?php the_field('reviews__slogan'); ?> <span class="reviews__slogan--color"><?php the_field('reviews__slogan--color'); ?></span>
 							</div>
 							<a class="reviews__btn btn" href="#">Free Consultation</a>
 						</div>
@@ -91,17 +91,17 @@
 			</section>
 			<section class="partners" id="partners">
 				<div class="container">
-					<h2 class="partners__title title">Our Partners</h2>
+					<h2 class="partners__title title"><?php the_field('partners__title'); ?></h2>
 					<div class="partners__wrap">
-						<div class="partners__item partners__item-1"><img class="partners__img" src="<?php echo IMG_DIR; ?>/logo-1.svg" alt="logo">
+						<div class="partners__item partners__item-1"><img class="partners__img" src="<?php the_field('partners__img-1'); ?>" alt="logo">
 						</div>
-						<div class="partners__item partners__item-2"><img class="partners__img" src="<?php echo IMG_DIR; ?>/logo-2.svg" alt="logo">
+						<div class="partners__item partners__item-2"><img class="partners__img" src="<?php the_field('partners__img-2'); ?>" alt="logo">
 						</div>
-						<div class="partners__item partners__item-3"><img class="partners__img" src="<?php echo IMG_DIR; ?>/logo-3.svg" alt="logo">
+						<div class="partners__item partners__item-3"><img class="partners__img" src="<?php the_field('partners__img-3'); ?>" alt="logo">
 						</div>
-						<div class="partners__item partners__item-4"><img class="partners__img" src="<?php echo IMG_DIR; ?>/logo-4.svg" alt="logo">
+						<div class="partners__item partners__item-4"><img class="partners__img" src="<?php the_field('partners__img-4'); ?>" alt="logo">
 						</div>
-						<div class="partners__item partners__item-5"><img class="partners__img" src="<?php echo IMG_DIR; ?>/logo-5.svg" alt="logo">
+						<div class="partners__item partners__item-5"><img class="partners__img" src="<?php the_field('partners__img-5'); ?>" alt="logo">
 						</div>
 					</div>
 				</div>
